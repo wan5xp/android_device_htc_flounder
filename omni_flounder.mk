@@ -8,7 +8,11 @@ TARGET_EXCLUDE_LIVEWALLPAPERS := true
 $(call inherit-product, device/htc/flounder/aosp_flounder.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/omni/config/common_tablet.mk)
+
+# SELinux
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.selinux=1
 
 # Override product naming for Omni
 PRODUCT_NAME := omni_flounder
