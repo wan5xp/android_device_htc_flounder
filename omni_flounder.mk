@@ -24,3 +24,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="google/volantis/flounder:7.0/NRD91D/3234828:user/release-keys" \
     PRIVATE_BUILD_DESC="volantis-user 7.0 NRD91D 3234828 release-keys"
 
+# Audio effects
+PRODUCT_COPY_FILES += \
+    device/htc/flounder/audio_effects.conf:system/etc/audio_effects.conf
