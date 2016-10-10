@@ -6,6 +6,9 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 
+# Enable vendor image symlink
+BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
+
 # TWRP
 TW_INCLUDE_CRYPTO := true
 TW_THEME := landscape_hdpi
