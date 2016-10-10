@@ -10,6 +10,9 @@ $(call inherit-product, device/htc/flounder/aosp_flounder.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common_tablet.mk)
 
+# Bootanimation
+TARGET_BOOTANIMATION_SIZE := 1080x720
+
 # SELinux
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
