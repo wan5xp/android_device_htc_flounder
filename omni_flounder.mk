@@ -1,3 +1,6 @@
+# Inherit omni-specific board config
+include device/htc/flounder/BoardConfigOmni.mk
+
 # Exclude Live Wallpapers
 TARGET_EXCLUDE_LIVEWALLPAPERS := true
 
